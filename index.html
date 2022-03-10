@@ -1,11 +1,45 @@
 <html>
 <head>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css" type="text/css" media="all" />
     <title>Examen 2º Ev</title>
+    <script>
+        function fuenteDis() {
+            document.getElementById("cuerpo").style.fontFamily = "OpenDyslexic";
+            var buttons = document.getElementsByTagName('button');
+            for (let i = 0; i < buttons.length; i++) {
+            let button = buttons[i];
+               button.className += ' dislexia';  
+            }
+            return true;   
+        }
+        function fuenteNor() {
+          document.getElementById("cuerpo").style.fontFamily = "Roboto";
+          var buttons = document.getElementsByTagName('button');
+            for (let i = 0; i < buttons.length; i++) {
+            let button = buttons[i];
+               button.classList.remove('dislexia');  
+            }
+        }
+        </script>
 </head>
+<body id="cuerpo">
+<header>
+    <div class="p-5 text-center bg-image" id="cabezera" >
+    <div class="mask" >
+      <div class="d-flex justify-content-center align-items-center h-100">
+        <div class="text-white">
+          <h1 class="mb-3">HISTORIA NATURAL</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">HISTORIA NATURAL</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -18,31 +52,142 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Sobre nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link" href="#">Historia</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Saber mas</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Separated link</a>
-            </div>
-          </li>
+          
         </ul>
         <form class="d-flex">
-          <input class="form-control me-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+          <input class="form-control me-sm-2" type="text" placeholder="Buscar en la pagina">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Buscar</button>
         </form>
       </div>
     </div>
   </nav>
-  
+
+  <main>
+    <div class="container">
+        <div class="row">
+            <article class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                <h2>Articulo 1</h2>
+                <p>Lorem ipsum dolor sit amet. Vel quidem Quis modi tempore eos provident corrupti et sequi velit aut tempora totam ut animi rerum ut totam voluptate. Id labore voluptatem ut dolor dignissimos est eligendi delectus et quis officia id voluptate illo qui sapiente nostrum. Ut deleniti dolorem aut beatae doloremque id animi dignissimos in rerum incidunt vel quisquam dicta qui omnis deserunt eum quam similique.
+
+                    Est voluptas nemo non provident velit At voluptatem doloremque ut dolorum perferendis qui quisquam excepturi. Ut tenetur consectetur qui reprehenderit mollitia aut atque sint qui debitis asperiores et autem eligendi non autem maiores et error vero. Qui assumenda voluptate ut dolores animi est assumenda sapiente eum dolorem velit. Sit iste nihil vel illo quos in aperiam quod.
+                    
+                    Vel consectetur alias sed nihil earum rem soluta error qui similique quas sed voluptatibus delectus? Ut rerum maiores ut repudiandae esse est facere expedita in quos ducimus aut sint sunt. Qui eius repudiandae et galisum facere eos amet dolorem in quis reiciendis sit consequatur quia.
+                </p>
+            </article>
+            <article class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                <h2>Articulo 2</h2>
+                <p>
+                    Lorem ipsum dolor sit amet. Vel quidem Quis modi tempore eos provident corrupti et sequi velit aut tempora totam ut animi rerum ut totam voluptate. Id labore voluptatem ut dolor dignissimos est eligendi delectus et quis officia id voluptate illo qui sapiente nostrum. Ut deleniti dolorem aut beatae doloremque id animi dignissimos in rerum incidunt vel quisquam dicta qui omnis deserunt eum quam similique.
+
+                    Est voluptas nemo non provident velit At voluptatem doloremque ut dolorum perferendis qui quisquam excepturi. Ut tenetur consectetur qui reprehenderit mollitia aut atque sint qui debitis asperiores et autem eligendi non autem maiores et error vero. Qui assumenda voluptate ut dolores animi est assumenda sapiente eum dolorem velit. Sit iste nihil vel illo quos in aperiam quod.
+                    
+                    Vel consectetur alias sed nihil earum rem soluta error qui similique quas sed voluptatibus delectus? Ut rerum maiores ut repudiandae esse est facere expedita in quos ducimus aut sint sunt. Qui eius repudiandae et galisum facere eos amet dolorem in quis reiciendis sit consequatur quia.
+                </p>
+            </article>
+            <article  class="col-xs-12 col-sm-4 col-md-4 col-lg-4 text-center">
+                <h2>Articulo 3</h2>
+                <p>
+                    Lorem ipsum dolor sit amet. Vel quidem Quis modi tempore eos provident corrupti et sequi velit aut tempora totam ut animi rerum ut totam voluptate. Id labore voluptatem ut dolor dignissimos est eligendi delectus et quis officia id voluptate illo qui sapiente nostrum. Ut deleniti dolorem aut beatae doloremque id animi dignissimos in rerum incidunt vel quisquam dicta qui omnis deserunt eum quam similique.
+
+                    Est voluptas nemo non provident velit At voluptatem doloremque ut dolorum perferendis qui quisquam excepturi. Ut tenetur consectetur qui reprehenderit mollitia aut atque sint qui debitis asperiores et autem eligendi non autem maiores et error vero. Qui assumenda voluptate ut dolores animi est assumenda sapiente eum dolorem velit. Sit iste nihil vel illo quos in aperiam quod.
+                    
+                    Vel consectetur alias sed nihil earum rem soluta error qui similique quas sed voluptatibus delectus? Ut rerum maiores ut repudiandae esse est facere expedita in quos ducimus aut sint sunt. Qui eius repudiandae et galisum facere eos amet dolorem in quis reiciendis sit consequatur quia.
+                </p>
+            </article>
+        </div>
+    </div>
+  </main>
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <section
+          class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+
+          <div class="me-5 d-none d-lg-block">
+            <span>Nuestras redes sociales:</span>
+          </div>
+      
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://alejandroelguerra.github.io/examenDise/" class="me-4 text-reset">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </section>
+
+      
+
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+ 
+            <div class="row mt-3">
+
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Historia Natural
+                </h6>
+                <p>
+                    Lorem ipsum dolor sit amet. Vel quidem Quis modi tempore eos provident corrupti et sequi velit aut tempora totam ut animi rerum ut 
+                </p>
+              </div>
+
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Links utiles
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Pagina principal</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Sobre nosotros</a>
+                </p>
+                <p>
+                  <a href="#!" onclick= "return fuenteNor()" class="text-reset">Modo sin dislexia</a>
+                </p>
+                <p>
+                  <a href="#!" onclick= "return fuenteDis()" class="text-reset">Modo dislexico</a>
+                </p>
+              </div> 
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p><i class="fas fa-home me-3"></i> Madrid , Españita</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  HistoriaNatural@gemail.com
+                </p>
+                <p><i class="fas fa-phone me-3"></i> +34 789456123</p>
+                <p><i class="fas fa-print me-3"></i> +34 789456123</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="text-center p-4" id="copyright" >
+            <i class="fa fa-copyright" aria-hidden="true"></i> 2022 Copyright: Alejandro Guerra
+        </div>
+      </footer>
+    </body>
   </html>
