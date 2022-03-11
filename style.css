@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "OpenDyslexic";
+  src: url("openDyslexic/OpenDyslexicMono-Regular.otf");
+}
+article {
+  border-style: groove;
+  border-color: #686666;
+  border-radius: 5px;
+  margin-top: 2%;
+  padding-top: 2%;
+  background-color: #ffffff;
+  opacity: 0.7;
+}
+
+main {
+  background-color: #ffffff;
+  background-image: url("https://mdbootstrap.com/img/Photos/Others/images/76.jpg");
+}
+
+#cabezera {
+  background-image: url("cabezera.webp");
+  height: 400px;
+}
+
+p {
+  padding-left: 10%;
+  padding-right: 10%;
+  text-align: justify;
+}
+
+.mask {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#copyright {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dislexia {
+  font-family: "OpenDyslexic";
+}
+
+/*# sourceMappingURL=style.css.map */

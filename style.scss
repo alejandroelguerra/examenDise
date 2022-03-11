@@ -1,0 +1,67 @@
+//fuente de dislexia
+@font-face {
+    font-family: "OpenDyslexic";
+    src: url("openDyslexic/OpenDyslexicMono-Regular.otf");
+  }
+$fuente-dislexia:"OpenDyslexic";
+
+//estilo main
+$color_fondo:#ffffff;
+$color_cabezera:rgba(0, 0, 0, 0.6);
+$color_pie_copyright:rgba(0, 0, 0, 0.05);
+$imagen_main:url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+//estilo cabezera
+$imagen_cabezera:url('cabezera.webp');
+$anchura_imagen_cabezera:400px;
+
+
+//estilo del articulo
+$color_borde_articulo:rgb(104, 102, 102);
+$estilo_borde:groove;
+$radio_borde:5px;
+$margen_arriba:2%;
+$padding_arriba:2%;
+$fondo_articulo:#ffffff;
+$opacidad_articulo:0.7;
+//estilo texto articulo
+
+$alineacion_texto:justify;
+$padding_izquierda_texto:10%;
+$padding_derecha_texto:10%;
+
+article{
+
+    border-style: $estilo_borde;
+    border-color:$color_borde_articulo;
+    border-radius: $radio_borde;
+    margin-top: $margen_arriba;
+    padding-top: $padding_arriba;
+    background-color: $fondo_articulo;
+    opacity: $opacidad_articulo;
+}
+
+main{
+    background-color: $color_fondo;
+    background-image: $imagen_main;
+}
+#cabezera{
+    background-image: $imagen_cabezera;
+    height: $anchura_imagen_cabezera;
+}
+
+
+p{
+    padding-left: $padding_izquierda_texto;
+    padding-right: $padding_derecha_texto;
+    text-align: $alineacion_texto;
+}
+.mask{
+    background-color:$color_cabezera;
+}
+#copyright{
+    background-color: $color_pie_copyright;
+}
+
+.dislexia{
+    font-family: $fuente-dislexia;
+}
