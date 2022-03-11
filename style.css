@@ -14,12 +14,16 @@ article {
 
 main {
   background-color: #ffffff;
-  background-image: url("https://mdbootstrap.com/img/Photos/Others/images/76.jpg");
+  background-image: url("fondo.jpg");
 }
 
 #cabezera {
   background-image: url("cabezera.webp");
-  height: 400px;
+  height: 35%;
+}
+
+body {
+  font-family: "Roboto";
 }
 
 p {

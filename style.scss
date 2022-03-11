@@ -9,12 +9,13 @@ $fuente-dislexia:"OpenDyslexic";
 $color_fondo:#ffffff;
 $color_cabezera:rgba(0, 0, 0, 0.6);
 $color_pie_copyright:rgba(0, 0, 0, 0.05);
-$imagen_main:url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+$imagen_main:url('fondo.jpg');
+
 //estilo cabezera
 $imagen_cabezera:url('cabezera.webp');
-$anchura_imagen_cabezera:400px;
-
-
+$anchura_imagen_cabezera:35%;
+//estilo cuerpo
+$fuente_normal:'Roboto';
 //estilo del articulo
 $color_borde_articulo:rgb(104, 102, 102);
 $estilo_borde:groove;
@@ -24,7 +25,6 @@ $padding_arriba:2%;
 $fondo_articulo:#ffffff;
 $opacidad_articulo:0.7;
 //estilo texto articulo
-
 $alineacion_texto:justify;
 $padding_izquierda_texto:10%;
 $padding_derecha_texto:10%;
@@ -48,7 +48,9 @@ main{
     background-image: $imagen_cabezera;
     height: $anchura_imagen_cabezera;
 }
-
+body{
+   font-family: $fuente_normal;
+}
 
 p{
     padding-left: $padding_izquierda_texto;
