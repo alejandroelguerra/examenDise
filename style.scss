@@ -12,7 +12,7 @@ $color_pie_copyright:rgba(0, 0, 0, 0.05);
 $imagen_main:url('fondo.jpg');
 
 //estilo cabezera
-$imagen_cabezera:url('cabezera.webp');
+$imagen_cabezera:url('cabezera.jpg');
 $anchura_imagen_cabezera:35%;
 //estilo cuerpo
 $fuente_normal:'Roboto';
@@ -28,6 +28,8 @@ $opacidad_articulo:0.7;
 $alineacion_texto:justify;
 $padding_izquierda_texto:10%;
 $padding_derecha_texto:10%;
+//estilo navbar
+$color_navbar:#000000;
 
 article{
 
@@ -48,6 +50,9 @@ main{
     background-image: $imagen_cabezera;
     height: $anchura_imagen_cabezera;
 }
+nav.navbar {
+    background-color: $color_navbar;
+  }
 body{
    font-family: $fuente_normal;
 }
