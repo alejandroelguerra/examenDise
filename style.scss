@@ -14,6 +14,7 @@ $imagen_main:url('fondo.jpg');
 //estilo cabezera
 $imagen_cabezera:url('cabezera.jpg');
 $anchura_imagen_cabezera:35%;
+$background_tamaño:cover;
 //estilo cuerpo
 $fuente_normal:'Roboto';
 //estilo del articulo
@@ -40,15 +41,18 @@ article{
     padding-top: $padding_arriba;
     background-color: $fondo_articulo;
     opacity: $opacidad_articulo;
+
 }
 
 main{
     background-color: $color_fondo;
     background-image: $imagen_main;
+    background-size: $background_tamaño;
 }
 #cabezera{
     background-image: $imagen_cabezera;
     height: $anchura_imagen_cabezera;
+    background-size: $background_tamaño;
 }
 nav.navbar {
     background-color: $color_navbar;

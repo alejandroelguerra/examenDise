@@ -15,11 +15,17 @@ article {
 main {
   background-color: #ffffff;
   background-image: url("fondo.jpg");
+  background-size: cover;
 }
 
 #cabezera {
   background-image: url("cabezera.jpg");
   height: 35%;
+  background-size: cover;
+}
+
+nav.navbar {
+  background-color: #000000;
 }
 
 body {
@@ -42,9 +48,6 @@ p {
 
 .dislexia {
   font-family: "OpenDyslexic";
-}
-nav.navbar {
-  background-color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
